@@ -55,7 +55,13 @@ function generat_product_name(){
     return $product_name_array;
 }
 
-function generater_product_price(){
+function generat_category($loop){
+
+    $cat_array = array();
+    for($i=0; $i>$loop; $i++){
+        array_push($cat_array,rand(0,10));
+    }
+    return $cat_array;
 
 }
 
